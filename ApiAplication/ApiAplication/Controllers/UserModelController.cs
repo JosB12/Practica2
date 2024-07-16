@@ -1,43 +1,39 @@
 ﻿using ApiAplication.Interface;
-using ApiAplication.Model;
-using ApiAplication.Servicios;
-using Microsoft.AspNetCore.Http;
+using CapaDatos;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Win32;
-using System.Text.Json;
 
 namespace ApiAplication.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
-    public class UserModelController : ControllerBase
+    public class UsuarioModelController : ControllerBase
     {
-        private readonly IPersona service;
 
-        public UserModelController(IPersona service)
+        IPersona persona;
+
+        public UsuarioModelController(IPersona service)
         {
-            this.service = service;
+            this.persona = service;
         }
 
         [HttpPost]
         [Route("GuardarUsuario")]
-        public IActionResult PostDatosRegistros([FromBody] User NuevoUser)
+        public IActionResult PostDatosRegistros([FromBody] Usuario NuevoUsuario)
         {
-            String results = service.PostDatosRegistros(NuevoUser);
+            String results = persona.PostDatosRegistros(NuevoUsuario);
             if (results == "Datos erroneos")
             {
                 return BadRequest(results);
             }
-            return CreatedAtAction(nameof(GetDatosCreados),
-            new { id = NuevoUser._Id }, NuevoUser);
+            return CreatedAtAction(nameof(GetDatosCreados), new { id = NuevoUsuario.Id }, NuevoUsuario);
         }
 
         [HttpPost]
         [Route("Login")]
-        public IActionResult PostLogear([FromBody] User user)
+        public IActionResult PostLogear([FromBody] Usuario Usuario)
         {
-            User Registro = (User)service.PostLogear(user);
+            Usuario Registro = (Usuario)persona.PostLogear(Usuario);
             if (Registro == null)
             {
                 return Unauthorized();
@@ -50,7 +46,7 @@ namespace ApiAplication.Controllers
         [Route("{id}")]
         public IActionResult GetDatosCreados(int id)
         {
-            User registro =  (User)service.GetDatosCreados(id);
+            Usuario registro =  (Usuario)persona.GetDatosCreados(id);
             if (registro == null)
             {
                 return NotFound();

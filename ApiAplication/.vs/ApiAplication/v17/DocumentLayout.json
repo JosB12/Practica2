@@ -3,52 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\model\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\model\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\servicios\\contactoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\servicios\\contactoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\controllers\\usermodelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\controllers\\usermodelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\servicios\\personaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\servicios\\personaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\id.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\id.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\interface\\icontacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\interface\\icontacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDBCAF89-4158-4D6A-9169-5A6111C0C317}|CapaDatos\\CapaDatos.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\capadatos\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDBCAF89-4158-4D6A-9169-5A6111C0C317}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\contacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\interface\\ipersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\interface\\ipersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDBCAF89-4158-4D6A-9169-5A6111C0C317}|CapaDatos\\CapaDatos.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\capadatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDBCAF89-4158-4D6A-9169-5A6111C0C317}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\apiaplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7D86C577-772E-4BE6-A092-AAD661A0D347}|ApiAplication\\ApiAplication.csproj|solutionrelative:apiaplication\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DDBCAF89-4158-4D6A-9169-5A6111C0C317}|CapaDatos\\CapaDatos.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\capadatos\\crudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDBCAF89-4158-4D6A-9169-5A6111C0C317}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\crudcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC49DBB-0404-4924-9413-0B05805069BD}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\capanegocio\\interfaces\\ipersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC49DBB-0404-4924-9413-0B05805069BD}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\interfaces\\ipersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC49DBB-0404-4924-9413-0B05805069BD}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\capanegocio\\interfaces\\icontacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC49DBB-0404-4924-9413-0B05805069BD}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\interfaces\\icontacto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC49DBB-0404-4924-9413-0B05805069BD}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\capanegocio\\services\\personaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC49DBB-0404-4924-9413-0B05805069BD}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\services\\personaservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DC49DBB-0404-4924-9413-0B05805069BD}|CapaNegocio\\CapaNegocio.csproj|c:\\users\\blanc\\onedrive\\escritorio\\pantalla\\practica2\\apiaplication\\capanegocio\\services\\contactoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DC49DBB-0404-4924-9413-0B05805069BD}|CapaNegocio\\CapaNegocio.csproj|solutionrelative:capanegocio\\services\\contactoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,153 +58,146 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserModelController.cs",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Controllers\\UserModelController.cs",
-              "RelativeDocumentMoniker": "ApiAplication\\Controllers\\UserModelController.cs",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Controllers\\UserModelController.cs",
-              "RelativeToolTip": "ApiAplication\\Controllers\\UserModelController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAkwBkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T07:20:38.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "usuarios.json",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\usuarios.json",
-              "RelativeDocumentMoniker": "ApiAplication\\usuarios.json",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\usuarios.json",
-              "RelativeToolTip": "ApiAplication\\usuarios.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-17T17:20:38.382Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ContactoController.cs",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Controllers\\ContactoController.cs",
-              "RelativeDocumentMoniker": "ApiAplication\\Controllers\\ContactoController.cs",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Controllers\\ContactoController.cs",
-              "RelativeToolTip": "ApiAplication\\Controllers\\ContactoController.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAA7wEgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T17:01:35.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContactoServices.cs",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Servicios\\ContactoServices.cs",
-              "RelativeDocumentMoniker": "ApiAplication\\Servicios\\ContactoServices.cs",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Servicios\\ContactoServices.cs",
-              "RelativeToolTip": "ApiAplication\\Servicios\\ContactoServices.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAkwHUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T06:02:52.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Program.cs",
               "RelativeDocumentMoniker": "ApiAplication\\Program.cs",
               "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Program.cs",
               "RelativeToolTip": "ApiAplication\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAABGAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T08:24:39.299Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PersonaServices.cs",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Servicios\\PersonaServices.cs",
-              "RelativeDocumentMoniker": "ApiAplication\\Servicios\\PersonaServices.cs",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Servicios\\PersonaServices.cs",
-              "RelativeToolTip": "ApiAplication\\Servicios\\PersonaServices.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAowFMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T03:30:48.632Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Contacto.cs",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Model\\Contacto.cs",
-              "RelativeDocumentMoniker": "ApiAplication\\Model\\Contacto.cs",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Model\\Contacto.cs",
-              "RelativeToolTip": "ApiAplication\\Model\\Contacto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T05:59:42.813Z",
+              "WhenOpened": "2024-07-16T09:19:02.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Model\\User.cs",
-              "RelativeDocumentMoniker": "ApiAplication\\Model\\User.cs",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Model\\User.cs",
-              "RelativeToolTip": "ApiAplication\\Model\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "usuarios.json",
+              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\usuarios.json",
+              "RelativeDocumentMoniker": "ApiAplication\\usuarios.json",
+              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\usuarios.json",
+              "RelativeToolTip": "ApiAplication\\usuarios.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-16T09:19:01.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaDatos\\Usuario.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\Usuario.cs",
+              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaDatos\\Usuario.cs",
+              "RelativeToolTip": "CapaDatos\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-17T07:19:42.041Z",
+              "WhenOpened": "2024-07-16T09:18:56.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPersona.cs",
+              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaNegocio\\Interfaces\\IPersona.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\Interfaces\\IPersona.cs",
+              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaNegocio\\Interfaces\\IPersona.cs",
+              "RelativeToolTip": "CapaNegocio\\Interfaces\\IPersona.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T09:18:51.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IContacto.cs",
+              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaNegocio\\Interfaces\\IContacto.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\Interfaces\\IContacto.cs",
+              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaNegocio\\Interfaces\\IContacto.cs",
+              "RelativeToolTip": "CapaNegocio\\Interfaces\\IContacto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T08:48:01.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "IContacto.cs",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Interface\\IContacto.cs",
-              "RelativeDocumentMoniker": "ApiAplication\\Interface\\IContacto.cs",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Interface\\IContacto.cs",
-              "RelativeToolTip": "ApiAplication\\Interface\\IContacto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Title": "PersonaServices.cs",
+              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaNegocio\\Services\\PersonaServices.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\Services\\PersonaServices.cs",
+              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaNegocio\\Services\\PersonaServices.cs",
+              "RelativeToolTip": "CapaNegocio\\Services\\PersonaServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T06:22:23.398Z"
+              "WhenOpened": "2024-07-16T08:23:07.774Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "id.txt",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\id.txt",
-              "RelativeDocumentMoniker": "ApiAplication\\id.txt",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\id.txt",
-              "RelativeToolTip": "ApiAplication\\id.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-07-08T00:19:00.084Z"
+              "DocumentIndex": 6,
+              "Title": "CrudContext.cs",
+              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaDatos\\CrudContext.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\CrudContext.cs",
+              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaDatos\\CrudContext.cs",
+              "RelativeToolTip": "CapaDatos\\CrudContext.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAswCsAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T08:11:28.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContactoController.cs",
+              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Controllers\\ContactoController.cs",
+              "RelativeDocumentMoniker": "ApiAplication\\Controllers\\ContactoController.cs",
+              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Controllers\\ContactoController.cs",
+              "RelativeToolTip": "ApiAplication\\Controllers\\ContactoController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwEEAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T08:07:26.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserModelController.cs",
+              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Controllers\\UserModelController.cs",
+              "RelativeDocumentMoniker": "ApiAplication\\Controllers\\UserModelController.cs",
+              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Controllers\\UserModelController.cs",
+              "RelativeToolTip": "ApiAplication\\Controllers\\UserModelController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T09:19:15.304Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "IPersona.cs",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Interface\\IPersona.cs",
-              "RelativeDocumentMoniker": "ApiAplication\\Interface\\IPersona.cs",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\Interface\\IPersona.cs",
-              "RelativeToolTip": "ApiAplication\\Interface\\IPersona.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Title": "ContactoServices.cs",
+              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaNegocio\\Services\\ContactoServices.cs",
+              "RelativeDocumentMoniker": "CapaNegocio\\Services\\ContactoServices.cs",
+              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaNegocio\\Services\\ContactoServices.cs",
+              "RelativeToolTip": "CapaNegocio\\Services\\ContactoServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T03:27:06.857Z"
+              "WhenOpened": "2024-07-16T08:13:03.82Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "ApiAplication\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\ApiAplication\\appsettings.Development.json",
-              "RelativeToolTip": "ApiAplication\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-17T17:20:27.746Z"
+              "DocumentIndex": 4,
+              "Title": "Contacto.cs",
+              "DocumentMoniker": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaDatos\\Contacto.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\Contacto.cs",
+              "ToolTip": "C:\\Users\\blanc\\OneDrive\\Escritorio\\pantalla\\Practica2\\ApiAplication\\CapaDatos\\Contacto.cs",
+              "RelativeToolTip": "CapaDatos\\Contacto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-16T08:09:59.657Z",
+              "EditorCaption": ""
             }
           ]
         }

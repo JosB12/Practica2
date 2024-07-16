@@ -1,0 +1,15 @@
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\bin\Debug\net8.0\CapaDatos.deps.json
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\bin\Debug\net8.0\CapaDatos.dll
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\bin\Debug\net8.0\CapaDatos.pdb
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\CapaDatos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\CapaDatos.AssemblyInfoInputs.cache
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\CapaDatos.AssemblyInfo.cs
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\CapaDatos.sourcelink.json
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\CapaDatos.dll
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\refint\CapaDatos.dll
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\CapaDatos.pdb
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\ref\CapaDatos.dll
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\bin\Debug\net8.0\CapaDatos.runtimeconfig.json
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\blanc\OneDrive\Escritorio\pantalla\Practica2\ApiAplication\CapaDatos\obj\Debug\net8.0\CapaDatos.genruntimeconfig.cache

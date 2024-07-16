@@ -5,42 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <div class="login">
-        <form id="loginForm" class="loginForm">
+    <div class="container">
+        <form id="loginForm">
             <h1>Login</h1>
             <div class="caja">
                 <input id="Usuario" name="Usuario" type="text" placeholder="Usuario" required>
                 <i class='bx bxs-user'></i>
             </div>
             <div class="caja">
-                <input id="Password" name="Password" type="password" placeholder="Password" required>
-                <i id=".bx" class='bx bxs-lock-alt'></i>
-            </div>
-            <div class="Recuerdame">
-                <label><input type="checkbox">Recuérdame</label>
-                <a href="#">¿Olvidaste tu contraseña?</a>
+                <input id="Pass" name="Pass" type="password" placeholder="Password" required>
+                <i id="iconoPass" class='bx bxs-lock-alt'></i>
             </div>
             <button type="submit" class="btn">Login</button>
-            <div class="Registrarse">
-                <p>No tienes una cuenta? <a href="registro.html">Regístrate</a></p> 
+            <div class="logearte">
+                <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p> 
             </div>
         </form>
     </div>
+    
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
             event.preventDefault();
+            const Usuario = document.getElementById('Usuario').value;
+            const Pass = document.getElementById('Pass').value;
 
-            const Nombre = document.getElementById('Usuario').value;
-            const Password = document.getElementById('Password').value;
-
-            fetch('https://localhost:7091/api/UserModel/Login', {
+            fetch('https://localhost:7091/api/UsuarioModel/Login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ Nombre, Password })
+                body: JSON.stringify({ Nombre: Usuario, Pass })
             })
             .then(response => {
                 if (response.ok) {
@@ -59,14 +56,18 @@
             });
         });
 
-        const Password = document.getElementById("Password"),
-              icono = document.getElementById(".bx");
-              
-        icono.addEventListener("click", e => {
-            if (Password.type === "password") {
-                Password.type = "text";
+        const Pass = document.getElementById("Pass");
+        const icono = document.getElementById("iconoPass");
+
+        icono.addEventListener("click", () => {
+            if (Pass.type === "password") {
+                Pass.type = "text";
+                icono.classList.remove('bxs-lock-alt');
+                icono.classList.add('bxs-lock-open');
             } else {
-                Password.type = "password";
+                Pass.type = "password";
+                icono.classList.remove('bxs-lock-open');
+                icono.classList.add('bxs-lock-alt');
             }
         });
     </script>

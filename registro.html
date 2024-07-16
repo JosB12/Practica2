@@ -32,15 +32,16 @@
     event.preventDefault();
 
     const Usuario = document.getElementById('Usuario').value;
-    const Password = document.getElementById('Password').value;
+    const Pass = document.getElementById('Password').value;
 
     const data = {
         Nombre: Usuario,
-        Password: Password
-    };
+        Pass: Pass
+    };  
 
+    
 
-    fetch('https://localhost:7091/api/UserModel/GuardarUsuario', {
+    fetch('https://localhost:7091/api/UsuarioModel/GuardarUsuario', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -1,5 +1,5 @@
 ﻿using ApiAplication.Interface;
-using ApiAplication.Model;
+using CapaDatos;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 
@@ -9,64 +9,76 @@ namespace ApiAplication.Controllers
     [ApiController]
     public class ContactoController : ControllerBase
     {
-        private readonly IContacto service;
+        IContacto contacto;
 
-        public ContactoController(IContacto service)
+
+
+        public ContactoController(IContacto contacto)
         {
-            this.service = service;
+            this.contacto = contacto;
         }
 
         [HttpPost]
         [Route("{userId}/AgregarContacto")]
         public IActionResult AgregarContacto(int userId, [FromBody] Contacto nuevoContacto)
         {
-            string resultado = service.AgregarContacto(userId, nuevoContacto);
-            JsonSerializer.Serialize(resultado);
+            string resultado = contacto.AgregarContacto(userId, nuevoContacto);
             return Ok(resultado);
         }
+
+
+
 
         [HttpPut]
         [Route("{userId}/EditarContacto")]
         public IActionResult EditarContacto(int userId, [FromBody] Contacto contactoEditado)
         {
-            string resultado = service.EditarContacto(userId, contactoEditado);
+            string resultado = contacto.EditarContacto(userId, contactoEditado);
+            if (resultado.Contains("no encontrado"))
+            {
+                return NotFound(resultado);
+            }
             return Ok(resultado);
         }
+
 
         [HttpDelete]
         [Route("{userId}/EliminarContacto/{contactoId}")]
         public IActionResult EliminarContacto(int userId, int contactoId)
         {
-            string resultado = service.EliminarContacto(userId, contactoId);
+            string resultado = contacto.EliminarContacto(userId, contactoId);
+            if (resultado.Contains("no encontrado"))
+            {
+                return NotFound(resultado);
+            }
             return Ok(resultado);
+        }
+
+
+
+        [HttpGet]
+        [Route("{userId}/Contactos")]
+        public IActionResult ObtenerContactos(int userId)
+        {
+            var contactos = contacto.ObtenerContactoslista(userId);
+            if (contactos == null || !contactos.Any())
+            {
+                return NotFound(new { message = "No se encontraron contactos para este usuario." });
+            }
+            return Ok(contactos);
         }
 
         [HttpGet]
         [Route("{userId}/Contacto/{contactoId}")]
         public IActionResult ObtenerContacto(int userId, int contactoId)
         {
-            Contacto contacto = service.ObtenerContacto(userId, contactoId);
-            if (contacto == null)
+            Contacto contactos = contacto.ObtenerContacto(userId, contactoId);
+            if (contactos == null)
             {
                 return NotFound("Contacto no encontrado");
             }
-            return Ok(contacto);
-        }
-
-
-        //cuidado abajo
-        
-        [HttpGet]
-        [Route("{userId}/Contactos")]
-        public IActionResult ObtenerContactos(int userId)
-        {
-            List<Contacto> contactos = service.ObtenerContactoslista(userId);
-            if (contactos == null)
-            {
-                return NotFound("Usuario no encontrado");
-            }
             return Ok(contactos);
         }
-        
+
     }
 }

@@ -39,8 +39,8 @@
         document.addEventListener('DOMContentLoaded', function() {
             const user = JSON.parse(localStorage.getItem('user'));
             if (user) {
-                document.getElementById('userName').textContent = `[${user.nombre}]`;
-                cargarContactos(user._Id);
+                document.getElementById('userName').textContent = `${user.nombre}`;
+                cargarContactos(user.id);
             } else {
                 window.location.href = 'inicio.html';
             }
@@ -50,7 +50,6 @@
             fetch(`https://localhost:7091/api/Contacto/${userId}/Contactos`)
                 .then(response => response.json())
                 .then(data => {
-                    console.log('Cargando contactos:', data);
                     const tbody = document.querySelector('#contactosTable tbody');
                     tbody.innerHTML = '';
                     data.forEach(contacto => {
@@ -69,8 +68,7 @@
                     });
                 })
                 .catch(error => {
-                    console.error('Error al cargar contactos:', error);
-                    alert('Error al cargar contactos: ' + error.message);
+                    console.log('Este usuario aun no tiene contactos: ' + error.message);
                 });
         }
 
@@ -89,14 +87,14 @@
 
         document.getElementById('contactoForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            const userId = JSON.parse(localStorage.getItem('user'))._Id;
+            const userId = JSON.parse(localStorage.getItem('user')).id;
             const contactoId = document.getElementById('contactoId').value;
             const nombre = document.getElementById('nombre').value;
             const telefono = document.getElementById('telefono').value;
             const email = document.getElementById('email').value;
             const direccion = document.getElementById('direccion').value;
 
-            const data = { nombre: nombre, telefono: telefono, email: email, direccion: direccion };
+            const data = { nombre, telefono, email, direccion };
 
             let url = `https://localhost:7091/api/Contacto/${userId}/AgregarContacto`;
             let method = 'POST';
@@ -104,12 +102,11 @@
             if (contactoId) {
                 url = `https://localhost:7091/api/Contacto/${userId}/EditarContacto`;
                 method = 'PUT';
-                data.ContactoId = contactoId;
+                data.contactoId = contactoId;
             }
 
-            console.log('Enviando datos:', data);
             fetch(url, {
-                method: method,
+                method,
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data)
             })
@@ -120,7 +117,6 @@
                 return response.json();
             })
             .then(() => {
-                console.log('El contacto se ha guardado exitosamente.');
                 cargarContactos(userId);
                 ocultarFormulario();
             })
@@ -131,7 +127,6 @@
         });
 
         function editarContacto(userId, contactoId) {
-            console.log(`Editando contacto: ${contactoId}`);
             fetch(`https://localhost:7091/api/Contacto/${userId}/Contacto/${contactoId}`)
                 .then(response => {
                     if (!response.ok) {
@@ -154,12 +149,10 @@
         }
 
         function eliminarContacto(userId, contactoId) {
-            console.log(`Eliminando contacto: ${contactoId}`);
             fetch(`https://localhost:7091/api/Contacto/${userId}/EliminarContacto/${contactoId}`, {
                 method: 'DELETE'
             })
             .then(() => {
-                console.log('Contacto eliminado exitosamente.');
                 cargarContactos(userId);
             })
             .catch(error => {
