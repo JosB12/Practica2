@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login">
+        <form id="loginForm" class="loginForm">
+            <h1>Login</h1>
+            <div class="caja">
+                <input id="Usuario" name="Usuario" type="text" placeholder="Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="caja">
+                <input id="Password" name="Password" type="password" placeholder="Password" required>
+                <i id=".bx" class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="Recuerdame">
+                <label><input type="checkbox">Recuérdame</label>
+                <a href="#">¿Olvidaste tu contraseña?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="Registrarse">
+                <p>No tienes una cuenta? <a href="registro.html">Regístrate</a></p> 
+            </div>
+        </form>
+    </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const Nombre = document.getElementById('Usuario').value;
+            const Password = document.getElementById('Password').value;
+
+            fetch('https://localhost:7091/api/UserModel/Login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ Nombre, Password })
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error('Datos incorrectos');
+                }
+            })
+            .then(data => {
+                localStorage.setItem('user', JSON.stringify(data));
+                window.location.href = 'bienvenida.html';
+            })
+            .catch(error => {
+                alert(error.message);
+                console.error('Error:', error);
+            });
+        });
+
+        const Password = document.getElementById("Password"),
+              icono = document.getElementById(".bx");
+              
+        icono.addEventListener("click", e => {
+            if (Password.type === "password") {
+                Password.type = "text";
+            } else {
+                Password.type = "password";
+            }
+        });
+    </script>
+</body>
+</html>

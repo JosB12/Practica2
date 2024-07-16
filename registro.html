@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="regist">
+        <form id="form" class="form">
+            <h1>Registro</h1>
+            <div class="caja">
+                <input id="Usuario" name="Usuario" type="text" placeholder="Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="caja">
+                <input id="Password" name="Password" type="password" placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <button type="submit" class="btn">registrarse</button>
+            <div class="logearte">
+                <p>Ya tienes una cuenta? <a href="inicio.html">Logeate</a></p> 
+            </div>
+        </form>
+        
+    </div>
+    <script>
+       document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const Usuario = document.getElementById('Usuario').value;
+    const Password = document.getElementById('Password').value;
+
+    const data = {
+        Nombre: Usuario,
+        Password: Password
+    };
+
+
+    fetch('https://localhost:7091/api/UserModel/GuardarUsuario', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => {
+        if (response.ok) {
+            return response.json();
+        }else{
+        throw new Error('Error al registrar usuario');
+        }
+    })
+    .then(data => {
+        console.log('Usuario registrado:', data);
+        alert('Usuario creado exitosamente');
+        
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Error al crear usuario');
+    });
+});
+
+    </script>
+</body>
+</html>

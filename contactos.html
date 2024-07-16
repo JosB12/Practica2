@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="bienvenida.css">
+</head>
+<body>
+    <div class="contactos">
+        <h1>Contactos de <span id="userName"></span></h1>
+        <table id="contactosTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Email</th>
+                    <th>Direccion</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button onclick="mostrarFormularioAgregar()">Agregar Contacto</button>
+        <div id="formularioContacto" style="display:none;">
+            <h2>Agregar/Editar Contacto</h2>
+            <form id="contactoForm">
+                <input type="hidden" id="contactoId">
+                <input type="text" id="nombre" placeholder="Nombre" required>
+                <input type="text" id="telefono" placeholder="Telefono" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="direccion" placeholder="Direccion" required>
+                <button type="submit">Guardar</button>
+                <button type="button" onclick="ocultarFormulario()">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const user = JSON.parse(localStorage.getItem('user'));
+            if (user) {
+                document.getElementById('userName').textContent = `[${user.nombre}]`;
+                cargarContactos(user._Id);
+            } else {
+                window.location.href = 'inicio.html';
+            }
+        });
+
+        function cargarContactos(userId) {
+            fetch(`https://localhost:7091/api/Contacto/${userId}/Contactos`)
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Cargando contactos:', data);
+                    const tbody = document.querySelector('#contactosTable tbody');
+                    tbody.innerHTML = '';
+                    data.forEach(contacto => {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td>${contacto.nombre}</td>
+                            <td>${contacto.telefono}</td>
+                            <td>${contacto.email}</td>
+                            <td>${contacto.direccion}</td>
+                            <td>
+                                <button onclick="editarContacto(${userId}, ${contacto.contactoId})">Editar</button>
+                                <button onclick="eliminarContacto(${userId}, ${contacto.contactoId})">Eliminar</button>
+                            </td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error al cargar contactos:', error);
+                    alert('Error al cargar contactos: ' + error.message);
+                });
+        }
+
+        function mostrarFormularioAgregar() {
+            document.getElementById('contactoId').value = '';
+            document.getElementById('nombre').value = '';
+            document.getElementById('telefono').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('direccion').value = '';
+            document.getElementById('formularioContacto').style.display = 'block';
+        }
+
+        function ocultarFormulario() {
+            document.getElementById('formularioContacto').style.display = 'none';
+        }
+
+        document.getElementById('contactoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const userId = JSON.parse(localStorage.getItem('user'))._Id;
+            const contactoId = document.getElementById('contactoId').value;
+            const nombre = document.getElementById('nombre').value;
+            const telefono = document.getElementById('telefono').value;
+            const email = document.getElementById('email').value;
+            const direccion = document.getElementById('direccion').value;
+
+            const data = { nombre: nombre, telefono: telefono, email: email, direccion: direccion };
+
+            let url = `https://localhost:7091/api/Contacto/${userId}/AgregarContacto`;
+            let method = 'POST';
+
+            if (contactoId) {
+                url = `https://localhost:7091/api/Contacto/${userId}/EditarContacto`;
+                method = 'PUT';
+                data.ContactoId = contactoId;
+            }
+
+            console.log('Enviando datos:', data);
+            fetch(url, {
+                method: method,
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.text().then(text => { throw new Error(text) });
+                }
+                return response.json();
+            })
+            .then(() => {
+                console.log('El contacto se ha guardado exitosamente.');
+                cargarContactos(userId);
+                ocultarFormulario();
+            })
+            .catch(error => {
+                console.error('Error al guardar el contacto:', error);
+                alert('Error al guardar el contacto: ' + error.message);
+            });
+        });
+
+        function editarContacto(userId, contactoId) {
+            console.log(`Editando contacto: ${contactoId}`);
+            fetch(`https://localhost:7091/api/Contacto/${userId}/Contacto/${contactoId}`)
+                .then(response => {
+                    if (!response.ok) {
+                        return response.text().then(text => { throw new Error(text) });
+                    }
+                    return response.json();
+                })
+                .then(contacto => {
+                    document.getElementById('contactoId').value = contacto.contactoId;
+                    document.getElementById('nombre').value = contacto.nombre;
+                    document.getElementById('telefono').value = contacto.telefono;
+                    document.getElementById('email').value = contacto.email;
+                    document.getElementById('direccion').value = contacto.direccion;
+                    document.getElementById('formularioContacto').style.display = 'block';
+                })
+                .catch(error => {
+                    console.error('Error al editar contacto:', error);
+                    alert('Error al editar contacto: ' + error.message);
+                });
+        }
+
+        function eliminarContacto(userId, contactoId) {
+            console.log(`Eliminando contacto: ${contactoId}`);
+            fetch(`https://localhost:7091/api/Contacto/${userId}/EliminarContacto/${contactoId}`, {
+                method: 'DELETE'
+            })
+            .then(() => {
+                console.log('Contacto eliminado exitosamente.');
+                cargarContactos(userId);
+            })
+            .catch(error => {
+                console.error('Error al eliminar contacto:', error);
+                alert('Error al eliminar contacto: ' + error.message);
+            });
+        }
+    </script>
+</body>
+</html>
